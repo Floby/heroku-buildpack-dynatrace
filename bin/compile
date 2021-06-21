@@ -82,8 +82,10 @@ puts_verbose "BUILD_DIR = $BUILD_DIR"
 puts_verbose "CACHE_DIR = $CACHE_DIR"
 puts_verbose "ENV_DIR = $ENV_DIR"
 
-puts_step "ls -alR ${BUILD_DIR}"
-ls -alR ${BUILD_DIR}
+puts_verbose "file ${BUILD_DIR}/dynatrace"
+file ${BUILD_DIR}/dynatrace
+cat ${BUILD_DIR}/dynatrace
+
 
 # Creating directories# Ensure directories exists
 mkdir -p "$BUILD_DIR/.profile.d"
