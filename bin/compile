@@ -83,8 +83,6 @@ puts_verbose "CACHE_DIR = $CACHE_DIR"
 puts_verbose "ENV_DIR = $ENV_DIR"
 
 puts_verbose "file ${BUILD_DIR}/dynatrace"
-file ${BUILD_DIR}/dynatrace
-cat ${BUILD_DIR}/dynatrace
 
 
 # Creating directories# Ensure directories exists
